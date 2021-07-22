@@ -23,8 +23,9 @@ export default function App() {
   const removeGoalHandler = goalId =>{
     setCourseGoals(currentGoals =>{
       return currentGoals.filter((goal) => goal.id !== goalId);
-    })
-  }
+    });
+    
+  };
 
   const cancelAddGoalHandler = () =>{
     setIsAddMode(false);
